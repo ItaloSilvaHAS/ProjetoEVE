@@ -1,4 +1,4 @@
-# 📚 Plataforma EVE – Estudo, Valorização e Educação
+# 📚 Projeto EVE – Estudo, Valorização e Educação
 
 A **EVE** é uma plataforma de ensino que oferece **cursos EAD e presenciais**, com foco em **estudo, professores de qualidade, networking educacional** e **valorização pessoal**. Criada para proporcionar uma experiência de aprendizado completa, a EVE combina tecnologia acessível com um ambiente organizado e funcional.
 
