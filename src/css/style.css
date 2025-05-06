@@ -1,0 +1,62 @@
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.4s, color 0.4s;
+}
+.dark body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.dark a {
+  color: #60a5fa;
+}
+.btn-primary {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  color: white;
+  transition: background-position 0.3s ease;
+  background-size: 200% 100%;
+  background-position: left;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-position: right;
+  outline: none;
+}
+.btn-secondary {
+  background: linear-gradient(90deg, #6ee7b7, #3b82f6);
+  color: white;
+  transition: background-position 0.3s ease;
+  background-size: 200% 100%;
+  background-position: left;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background-position: right;
+  outline: none;
+}
+.input-focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #3b82f6aa;
+  border-color: #2563eb;
+}
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* Scrolls para o dashbord */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #3b82f6;
+  border-radius: 3px;
+}
+/* Foco */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline-offset: 2px;
+}

@@ -1,0 +1,490 @@
+<html class="scroll-smooth" lang="pt-BR">
+ <head>
+  <link rel="icon" href="" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/style.css"/>
+  <script src="src/js/main.js" defer></script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta description="Taltal", content="Plataforma EVE é uma solução inovadora que une tecnologia acessível a um ambiente organizado, dinâmico e funcional para oferecer uma experiência de aprendizado completa. Com foco em cursos EAD e presenciais, a EVE valoriza o desenvolvimento pessoal e profissional, promovendo networking e ensino de qualidade."/>
+  <meta author="Italo", content="Italo Ferreira"/> 
+  <title>
+   Plataforma EVE – Estudo, Valorização e Educação
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  
+ </head>
+ <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 flex flex-col min-h-screen">
+
+  <!-- HEADER -->
+
+  <header class="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md">
+   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <a class="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" href="#home">
+     <img src="src/assets/Imagens/IconHeader.jpg" class="w-12 h-12 rounded-full" draggable="false" height="48" src="https://storage.googleapis.com/a1aa/image/8f562eb1-2161-49b0-e2fa-89caa9f23057.jpg" width="48"/>
+     <div>
+      <h1 class="text-2xl font-extrabold tracking-tight select-none">
+       EVE
+      </h1>
+      <p class="text-xs font-light -mt-1 select-none">
+       Estudo, Valorização e Educação
+      </p>
+     </div>
+    </a>
+    <nav aria-label="Menu principal" class="hidden md:flex space-x-8 font-semibold text-gray-700 dark:text-gray-300">
+     <a class="hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" href="#home">
+      Início
+     </a>
+     <a class="hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" href="#sobre">
+      Sobre
+     </a>
+     <a class="hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" href="#diferenciais">
+      Diferenciais
+     </a>
+     <a class="hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" href="#cursos">
+      Cursos
+     </a>
+     <a class="hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" href="#depoimentos">
+      Depoimentos
+     </a>
+     <a class="hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" href="#contato">
+      Contato
+     </a>
+     <button aria-controls="modal-login" aria-expanded="false" aria-haspopup="dialog" class="ml-4 btn-primary px-4 py-2 rounded-md focus:ring-2 focus:ring-blue-500" id="btn-login">
+      Login
+     </button>
+    </nav>
+    <div class="md:hidden flex items-center space-x-4">
+     <button aria-label="Alternar modo escuro" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" id="dark-toggle">
+      <i class="fas fa-moon text-gray-700 dark:text-gray-300">
+      </i>
+     </button>
+     <button aria-expanded="false" aria-label="Abrir menu" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" id="btn-menu">
+      <i class="fas fa-bars text-gray-700 dark:text-gray-300">
+      </i>
+     </button>
+    </div>
+   </div>
+   <nav aria-label="Menu móvel" class="hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700" id="mobile-menu">
+    <a class="block px-6 py-3 border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" href="#home">
+     Início
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" href="#sobre">
+     Sobre
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" href="#diferenciais">
+     Diferenciais
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" href="#cursos">
+     Cursos
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" href="#depoimentos">
+     Depoimentos
+    </a>
+    <a class="block px-6 py-3 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" href="#contato">
+     Contato
+    </a>
+    <button class="w-full text-left px-6 py-3 border-t border-gray-200 dark:border-gray-700 btn-primary focus:outline-none focus:ring-2 focus:ring-blue-500" id="mobile-login">
+     Login
+    </button>
+   </nav>
+  </header>
+  <!-- MODAL LOGIN -->
+  <div aria-labelledby="modal-login-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50" id="modal-login" role="dialog" tabindex="-1">
+   <div class="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full shadow-lg p-6 relative fade-in">
+    <button aria-label="Fechar modal" class="absolute top-3 right-3 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" id="close-login">
+     <i class="fas fa-times text-xl">
+     </i>
+    </button>
+    <h2 class="text-2xl font-bold mb-4 text-center text-gray-900 dark:text-gray-100" id="modal-login-title">
+     Login na Plataforma EVE
+    </h2>
+    <form class="space-y-4" id="form-login" novalidate="">
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="login-email">
+       Email
+      </label>
+      <input autocomplete="username" class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="login-email" name="email" placeholder="seuemail@exemplo.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="login-password">
+       Senha
+      </label>
+      <input autocomplete="current-password" class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="login-password" name="password" placeholder="********" required="" type="password"/>
+     </div>
+     <div class="flex items-center justify-between text-sm">
+      <label class="inline-flex items-center text-gray-700 dark:text-gray-300 cursor-pointer select-none">
+       <input class="form-checkbox h-4 w-4 text-blue-600" id="remember-me" type="checkbox"/>
+       <span class="ml-2">
+        Lembrar-me
+       </span>
+      </label>
+      <a class="text-blue-600 hover:underline dark:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" href="#">
+       Esqueceu a senha?
+      </a>
+     </div>
+     <button class="w-full btn-primary py-3 rounded-md font-semibold focus:ring-2 focus:ring-blue-500" type="submit">
+      Entrar
+     </button>
+     <p class="text-center text-sm text-gray-600 dark:text-gray-400">
+      Não tem conta?
+      <button class="text-blue-600 hover:underline dark:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" id="btn-register-switch" type="button">
+       Cadastre-se
+      </button>
+     </p>
+    </form>
+   </div>
+  </div>
+  <!-- MODAL REGISTER -->
+  <div aria-labelledby="modal-register-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50" id="modal-register" role="dialog" tabindex="-1">
+   <div class="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full shadow-lg p-6 relative fade-in">
+    <button aria-label="Fechar modal" class="absolute top-3 right-3 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" id="close-register">
+     <i class="fas fa-times text-xl">
+     </i>
+    </button>
+    <h2 class="text-2xl font-bold mb-4 text-center text-gray-900 dark:text-gray-100" id="modal-register-title">
+     Cadastro na Plataforma EVE
+    </h2>
+    <form class="space-y-4" id="form-register" novalidate="">
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="register-name">
+       Nome Completo
+      </label>
+      <input class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="register-name" name="name" placeholder="Seu nome completo" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="register-email">
+       Email
+      </label>
+      <input class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="register-email" name="email" placeholder="seuemail@exemplo.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="register-password">
+       Senha
+      </label>
+      <input class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="register-password" name="password" placeholder="********" required="" type="password"/>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="register-password-confirm">
+       Confirmar Senha
+      </label>
+      <input class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="register-password-confirm" name="passwordConfirm" placeholder="********" required="" type="password"/>
+     </div>
+     <button class="w-full btn-primary py-3 rounded-md font-semibold focus:ring-2 focus:ring-blue-500" type="submit">
+      Cadastrar
+     </button>
+     <p class="text-center text-sm text-gray-600 dark:text-gray-400">
+      Já tem conta?
+      <button class="text-blue-600 hover:underline dark:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" id="btn-login-switch" type="button">
+       Entrar
+      </button>
+     </p>
+    </form>
+   </div>
+  </div>
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow">
+   <!-- Hero / Início -->
+
+    <!-- Inicio / Cores e ETC -->
+
+
+   <section class="relative bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 dark:from-blue-900 dark:via-blue-800 dark:to-blue-900 text-white" id="home">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-32 flex flex-col-reverse md:flex-row items-center gap-12">
+     <div class="max-w-xl space-y-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
+       Plataforma EVE
+      </h1>
+      <p class="text-lg md:text-xl font-light drop-shadow-md">
+       Experiência completa de aprendizado com cursos EAD e presenciais, professores qualificados, networking educacional e valorização pessoal.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-6">
+       <a class="btn-primary px-6 py-3 rounded-md font-semibold shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-300" href="#cursos">
+        Conheça os Cursos
+       </a>
+       <button class="btn-secondary px-6 py-3 rounded-md font-semibold shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-300" id="btn-hero-login">
+        Entrar na Plataforma
+       </button>
+      </div>
+     </div>
+     <img alt="Imagem ilustrativa de estudantes felizes usando laptops e tablets em ambiente moderno de aprendizado" class="rounded-lg shadow-lg w-full max-w-lg" draggable="false" height="400" src="https://storage.googleapis.com/a1aa/image/4081e921-00c3-4cdd-d5f6-c3daf65d5502.jpg" width="600"/>
+    </div>
+   </section>
+   <!-- Sobre -->
+   <section class="max-w-7xl mx-auto px-6 py-16 scroll-mt-24" id="sobre">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 text-blue-600 dark:text-blue-400">
+     Sobre a Plataforma EVE
+    </h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+     <div class="space-y-6 text-gray-700 dark:text-gray-300 prose max-w-none">
+      <p>
+       A Plataforma EVE é uma solução inovadora que une tecnologia acessível a um ambiente organizado, dinâmico e funcional para oferecer uma experiência de aprendizado completa. Com foco em cursos EAD e presenciais, a EVE valoriza o desenvolvimento pessoal e profissional, promovendo networking e ensino de qualidade.
+      </p>
+      <p>
+       Contamos com professores altamente qualificados, conteúdos atualizados e uma plataforma intuitiva que acompanha o progresso do aluno, garantindo suporte e motivação durante toda a jornada.
+      </p>
+      <ul class="list-disc pl-5 space-y-2">
+       <li>
+        Ambiente moderno e responsivo para todos os dispositivos
+       </li>
+       <li>
+        Suporte dedicado e comunidade ativa
+       </li>
+       <li>
+        Certificados reconhecidos e válidos no mercado
+       </li>
+       <li>
+        Foco em acessibilidade e usabilidade
+       </li>
+      </ul>
+     </div>
+     <img alt="Imagem da equipe da Plataforma EVE colaborando em ambiente moderno e acolhedor" class="rounded-lg shadow-lg" draggable="false" height="400" src="https://storage.googleapis.com/a1aa/image/52d0dd8c-c6e7-4d8c-0e0e-f7752ac0a55b.jpg" width="600"/>
+    </div>
+   </section>
+   <!-- Diferenciais -->
+   <section class="bg-gradient-to-r from-green-400 to-blue-500 dark:from-green-700 dark:to-blue-900 text-white py-16 px-6" id="diferenciais">
+    <div class="max-w-7xl mx-auto text-center space-y-12">
+     <h2 class="text-3xl md:text-4xl font-extrabold">
+      Nossos Diferenciais
+     </h2>
+     <div class="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+      <div class="bg-white bg-opacity-20 rounded-xl p-8 shadow-lg hover:scale-105 transform transition-transform duration-300 cursor-default">
+       <i class="fas fa-chalkboard-teacher text-5xl mb-4">
+       </i>
+       <h3 class="text-xl font-semibold mb-2">
+        Professores Qualificados
+       </h3>
+       <p>
+        Especialistas com experiência prática e didática para garantir aprendizado efetivo.
+       </p>
+      </div>
+      <div class="bg-white bg-opacity-20 rounded-xl p-8 shadow-lg hover:scale-105 transform transition-transform duration-300 cursor-default">
+       <i class="fas fa-network-wired text-5xl mb-4">
+       </i>
+       <h3 class="text-xl font-semibold mb-2">
+        Networking Educacional
+       </h3>
+       <p>
+        Conecte-se com outros alunos e profissionais para ampliar suas oportunidades.
+       </p>
+      </div>
+      <div class="bg-white bg-opacity-20 rounded-xl p-8 shadow-lg hover:scale-105 transform transition-transform duration-300 cursor-default">
+       <i class="fas fa-laptop-code text-5xl mb-4">
+       </i>
+       <h3 class="text-xl font-semibold mb-2">
+        Tecnologia Acessível
+       </h3>
+       <p>
+        Plataforma intuitiva, responsiva e com recursos modernos para facilitar seu aprendizado.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Cursos -->
+   <section class="max-w-7xl mx-auto px-6 py-16 scroll-mt-24" id="cursos">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 text-blue-600 dark:text-blue-400">
+     Explore Nossos Cursos
+    </h2>
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+     <div class="flex flex-wrap gap-4">
+      <select aria-label="Filtrar por modalidade" class="rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 py-2 px-3 input-focus" id="filter-modality">
+       <option selected="" value="all">
+        Modalidade: Todos
+       </option>
+       <option value="ead">
+        EAD
+       </option>
+       <option value="presencial">
+        Presencial
+       </option>
+      </select>
+      <select aria-label="Filtrar por área do conhecimento" class="rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 py-2 px-3 input-focus" id="filter-area">
+       <option selected="" value="all">
+        Área do Conhecimento: Todas
+       </option>
+       <option value="tecnologia">
+        Tecnologia
+       </option>
+       <option value="gestao">
+        Gestão
+       </option>
+       <option value="saude">
+        Saúde
+       </option>
+       <option value="educacao">
+        Educação
+       </option>
+       <option value="design">
+        Design
+       </option>
+       <option value="idiomas">
+        Idiomas
+       </option>
+      </select>
+      <select aria-label="Filtrar por nível" class="rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 py-2 px-3 input-focus" id="filter-level">
+       <option selected="" value="all">
+        Nível: Todos
+       </option>
+       <option value="iniciante">
+        Iniciante
+       </option>
+       <option value="intermediario">
+        Intermediário
+       </option>
+       <option value="avancado">
+        Avançado
+       </option>
+      </select>
+     </div>
+     <button class="btn-secondary px-4 py-2 rounded-md font-semibold focus:ring-2 focus:ring-green-400" id="btn-clear-filters">
+      Limpar Filtros
+     </button>
+    </div>
+    <div aria-live="polite" aria-relevant="additions removals" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="courses-list">
+     <!-- Cursos serão inseridos via JS -->
+    </div>
+   </section>
+   <!-- Depoimentos -->
+   <section class="bg-gray-50 dark:bg-gray-800 py-16 px-6" id="depoimentos">
+    <div class="max-w-5xl mx-auto text-center space-y-12">
+     <h2 class="text-3xl md:text-4xl font-extrabold text-blue-600 dark:text-blue-400">
+      Depoimentos de Alunos
+     </h2>
+     <div class="relative max-w-4xl mx-auto">
+      <div class="overflow-hidden rounded-lg shadow-lg bg-white dark:bg-gray-900 p-8" id="testimonial-container">
+       <!-- Depoimentos via JS -->
+      </div>
+      <div class="flex justify-center mt-6 space-x-4">
+       <button aria-label="Depoimento anterior" class="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400" id="prev-testimonial">
+        <i class="fas fa-chevron-left">
+        </i>
+       </button>
+       <button aria-label="Próximo depoimento" class="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400" id="next-testimonial">
+        <i class="fas fa-chevron-right">
+        </i>
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- Contato -->
+   <section class="max-w-4xl mx-auto px-6 py-16 scroll-mt-24" id="contato">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 text-blue-600 dark:text-blue-400">
+     Fale Conosco
+    </h2>
+    <form class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 space-y-6" id="contact-form" novalidate="">
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="contact-name">
+       Nome completo
+      </label>
+      <input class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="contact-name" name="name" placeholder="Seu nome completo" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="contact-email">
+       E-mail
+      </label>
+      <input class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="contact-email" name="email" placeholder="seuemail@exemplo.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="contact-subject">
+       Assunto
+      </label>
+      <input class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="contact-subject" name="subject" placeholder="Assunto da mensagem" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1" for="contact-message">
+       Mensagem
+      </label>
+      <textarea class="w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 py-2 px-3 text-gray-900 dark:text-gray-100 input-focus" id="contact-message" name="message" placeholder="Escreva sua mensagem aqui" required="" rows="5"></textarea>
+     </div>
+     <button class="w-full btn-primary py-3 rounded-md font-semibold focus:ring-2 focus:ring-blue-500" type="submit">
+      Enviar Mensagem
+     </button>
+     <p aria-live="polite" class="text-center mt-4 font-semibold" id="contact-feedback" role="alert">
+     </p>
+    </form>
+    <div class="mt-12 text-center space-y-4 text-gray-700 dark:text-gray-300">
+     <p>
+      <i class="fas fa-phone-alt mr-2 text-blue-600 dark:text-blue-400">
+      </i>
+      Telefone: +55 (11) 1234-5678
+     </p>
+     <p>
+      <i class="fas fa-envelope mr-2 text-blue-600 dark:text-blue-400">
+      </i>
+      Email: contato@plataformaeve.com.br
+     </p>
+     <p>
+      <i class="fas fa-map-marker-alt mr-2 text-blue-600 dark:text-blue-400">
+      </i>
+      Endereço: Rua da Educação, 123, São Paulo, SP
+     </p>
+    </div>
+   </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 py-6 mt-12">
+   <div class="max-w-7xl mx-auto px-6 text-center text-sm select-none">
+    © 2024 Plataforma EVE. Todos os direitos reservados.
+   </div>
+  </footer>
+
+  <!-- DASHBOARD (é pra deixa escondidinho) -->
+  <div aria-labelledby="dashboard-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex flex-col max-w-7xl mx-auto p-6 rounded-lg shadow-lg hidden z-50 overflow-y-auto" id="dashboard" role="dialog" tabindex="-1">
+   <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg flex flex-col max-h-full overflow-hidden">
+    <header class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+     <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100" id="dashboard-title">
+      Dashboard do Aluno
+     </h2>
+     <button aria-label="Fechar dashboard" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" id="dashboard-close">
+      <i class="fas fa-times text-xl">
+      </i>
+     </button>
+    </header>
+    <main class="p-6 overflow-y-auto flex-grow space-y-10">
+     <!-- Progresso -->
+     <section aria-labelledby="progress-title" class="space-y-4">
+      <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400" id="progress-title">
+       Progresso nos Cursos
+      </h3>
+      <ul aria-live="polite" aria-relevant="additions removals" class="space-y-4 max-h-48 overflow-y-auto scrollbar-thin" id="progress-list">
+       <!-- Progresso via JS -->
+      </ul>
+     </section>
+     <!-- Certificados -->
+     <section aria-labelledby="certificates-title" class="space-y-4">
+      <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400" id="certificates-title">
+       Certificados
+      </h3>
+      <ul aria-live="polite" aria-relevant="additions removals" class="space-y-4 max-h-48 overflow-y-auto scrollbar-thin" id="certificates-list">
+       <!-- Certificados via JS -->
+      </ul>
+     </section>
+     <!-- Calendário -->
+     <section aria-labelledby="calendar-title" class="space-y-4">
+      <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400" id="calendar-title">
+       Calendário de Aulas
+      </h3>
+      <ul aria-live="polite" aria-relevant="additions removals" class="space-y-4 max-h-48 overflow-y-auto scrollbar-thin" id="calendar-list">
+       <!-- Calendário via JS -->
+      </ul>
+     </section>
+     <!-- Networking -->
+     <section aria-labelledby="networking-title" class="space-y-4">
+      <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400" id="networking-title">
+       Área de Networking
+      </h3>
+      <div aria-label="Lista de contatos para networking" class="flex space-x-4 overflow-x-auto scrollbar-thin" id="networking-list" tabindex="0">
+       <!-- Networking via JS -->
+      </div>
+     </section>
+    </main>
+   </div>
+  </div>
+ </body>
+</html>
