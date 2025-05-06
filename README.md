@@ -26,7 +26,7 @@ Seu diferencial está na proposta de ensino dinâmico: tanto pelo navegador quan
 ## 📂 Estrutura do Projeto
 
 ```markdown
-'''
+
 EVE/
 ├── index.html
 ├── src/
@@ -35,9 +35,7 @@ EVE/
 │ │ └── styles.css
 │ ├── js/
 │ │ ├── main.js
-│ │ └── math.js
 │ └── components/
-│ └── navbar.html
 ```
 
 
