@@ -10,7 +10,7 @@ Seu diferencial está na proposta de ensino dinâmico: tanto pelo navegador quan
 
 - **HTML5** – estrutura da aplicação
 - **CSS3** com **Tailwind CSS** – estilização moderna e responsiva
-- **JavaScript Puro (Vanilla JS)** – lógica interativa e cálculos matemáticos
+- **JavaScript Puro (Vanilla JS)** – lógica interativa
 
 ---
 
