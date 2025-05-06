@@ -17,7 +17,6 @@ Seu diferencial está na proposta de ensino dinâmico: tanto pelo navegador quan
 ## 🔧 Funcionalidades Principais
 
 - Navegação entre abas (sem recarregar a página)
-- Cálculos matemáticos simples (juros, médias, etc.)
 - Layout moderno e responsivo com Tailwind
 - Estrutura modular e bem organizada (HTML, CSS e JS separados)
 
