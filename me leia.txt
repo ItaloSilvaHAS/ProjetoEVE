@@ -1,0 +1,4 @@
+Veja:
+	Acesse: projeto-eve.app.vercel
+	no google! Veja meu deploy feito, site no ar e funcionando.
+	Mereço um mb ne? rs
